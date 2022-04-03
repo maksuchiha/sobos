@@ -1117,7 +1117,7 @@ h1, h2, h3 {
   }
 }
 .button {
-  background: #202020;
+  background: #2a2a2a;
   border-radius: 27px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -1130,11 +1130,13 @@ h1, h2, h3 {
 }
 .button:hover {
   color: #F0F0F0;
+  background: #202020;
 }
 
 @media (max-width: 1022px) {
   .button {
     color: #F0F0F0;
+    background: #202020;
   }
 }
 .message {
