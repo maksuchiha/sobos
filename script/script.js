@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./modules/modal.js":
+/*!**************************!*\
+  !*** ./modules/modal.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"modal\": () => (/* binding */ modal)\n/* harmony export */ });\nconst modal = (overlay, modalOpen, modalClose) => {\n    const modal = document.querySelector(`.${overlay}`)\n    const openBtn = document.querySelector(`.${modalOpen}`)\n    const closeBtn = modal.querySelectorAll(`.${modalClose}`)\n\n    openBtn.addEventListener('click', () => {\n        modal.style.display = 'flex'\n    })\n\n    closeBtn.forEach(item => {\n        item.addEventListener('click', () => {\n            modal.style.display = 'none'\n        })\n    })\n}\n\n//# sourceURL=webpack:///./modules/modal.js?");
+
+/***/ }),
+
 /***/ "./modules/scrollTo.js":
 /*!*****************************!*\
   !*** ./modules/scrollTo.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/burger */ \"./modules/burger.js\");\n/* harmony import */ var _modules_scrollTo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/scrollTo */ \"./modules/scrollTo.js\");\n/* harmony import */ var _node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../node_modules/swiper/swiper.esm.js */ \"../node_modules/swiper/swiper.esm.js\");\n\n\n\n\n_node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Swiper.use([_node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Autoplay]);\n\n\n(0,_modules_scrollTo__WEBPACK_IMPORTED_MODULE_1__.scrollTo)('header__list', 'header__link', 'data-name')\n;(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.burger)('header__burger', 'header__close', 'header__inner', 'header__inner_active')\n\nconst swiper = new _node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Swiper('.clients__inner', {\n    loop: true,\n    autoplay: {\n        delay: 1,\n        disableOnInteraction: false\n    },\n    speed: 4000,\n    breakpoints: {\n        1022: {\n            slidesPerView: 3,\n        },\n        798: {\n            slidesPerView: 2,\n        },\n        320: {\n            slidesPerView: 1,\n        }\n    },\n    spaceBetween: 25,\n});\n\n//# sourceURL=webpack:///./script/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/burger */ \"./modules/burger.js\");\n/* harmony import */ var _modules_scrollTo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/scrollTo */ \"./modules/scrollTo.js\");\n/* harmony import */ var _node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../node_modules/swiper/swiper.esm.js */ \"../node_modules/swiper/swiper.esm.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/modal */ \"./modules/modal.js\");\n\n\n\n\n\n_node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Swiper.use([_node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Autoplay]);\n\n(0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__.modal)('overlay', 'message__button', 'modal__close')\n;(0,_modules_modal__WEBPACK_IMPORTED_MODULE_3__.modal)('overlay', 'services__button', 'modal__close')\n;(0,_modules_scrollTo__WEBPACK_IMPORTED_MODULE_1__.scrollTo)('header__list', 'header__link', 'data-name')\n;(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__.burger)('header__burger', 'header__close', 'header__inner', 'header__inner_active')\n\nconst swiper = new _node_modules_swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_2__.Swiper('.clients__inner', {\n    loop: true,\n    autoplay: {\n        delay: 1,\n        disableOnInteraction: false\n    },\n    speed: 4000,\n    breakpoints: {\n        1022: {\n            slidesPerView: 3,\n        },\n        798: {\n            slidesPerView: 2,\n        },\n        320: {\n            slidesPerView: 1,\n        }\n    },\n    spaceBetween: 25,\n});\n\n//# sourceURL=webpack:///./script/script.js?");
 
 /***/ }),
 
